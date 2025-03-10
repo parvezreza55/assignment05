@@ -17,7 +17,11 @@ document
       const historyContainer = document.getElementById("history-desc");
       const div = document.createElement("div");
       div.innerHTML = `
-            <p class="border border-color p-4 rounded-xl"> ${donateAmount} Tk is Donated for ${headerTitle}</p>
+            <div class="border border-color p-4 rounded-xl">
+            <p > ${donateAmount} Tk is Donated for ${headerTitle}</p>
+            <p > Date:${times()} </p>
+           </div>
+
         `;
       historyContainer.appendChild(div);
     }

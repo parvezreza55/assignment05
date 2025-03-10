@@ -15,7 +15,8 @@ function getTitle(id) {
 function setInnerText(id, value) {
   document.getElementById(id).innerText = value;
 }
-function createAndSetElement()
-{
-    
+function times() {
+  const time = new Date();
+  const fullTime = time.toString();
+  return fullTime;
 }
