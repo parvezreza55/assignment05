@@ -38,16 +38,22 @@
     <header>
       <nav class="nav-color">
         <div
-          class="flex justify-between shadow-sm px-24 pb-16 pt-8 items-center"
+          class="flex justify-between px-3 md:px-24 pb-5 pt-8 items-center nav-color"
         >
           <div class="">
-            <a class="btn primary-color rounded-lg p-4 text-[20px]">Home</a>
+            <a
+              id="change-location1"
+              class="btn primary-color rounded-lg p-4 text-[20px]"
+              >Home</a
+            >
           </div>
           <div class=" ">
             <!-- image section  -->
-            <div class="flex items-center gap-4">
+            <div class="flex items-center gap-1 md:gap-4">
               <img class="w-9" src="assets/logo.png" alt="" />
-              <h1 class="text-xl font-semibold">Donate Bangladesh</h1>
+              <h1 class="text-lg md:text-2xl font-semibold hidden md:block">
+                Donate Bangladesh
+              </h1>
             </div>
           </div>
           <div class="">
@@ -60,7 +66,7 @@
       </nav>
     </header>
     <!-- main section  -->
-    <main class="max-w-screen-xl mx-auto">
+    <main class="max-w-screen-xl mx-auto px-5 md:px-0">
       <div class="flex items-center gap-1 mt-5">
         <h1 class="text-3xl font-bold">Important FAQ</h1>
         <div>
@@ -121,5 +127,6 @@
         </div>
       </div>
     </main>
+    <script src="script/toggle2.js"></script>
   </body>
 </html>

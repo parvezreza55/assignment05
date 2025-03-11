@@ -38,16 +38,22 @@
     <header class="sticky top-0 backdrop-blur-lg">
       <nav>
         <div
-          class="flex justify-between px-24 pb-5 pt-8 items-center nav-color"
+          class="flex justify-between px-3 md:px-24 pb-5 pt-8 items-center nav-color"
         >
           <div class="">
-            <a class="btn primary-color rounded-lg p-4 text-[20px]">Blog</a>
+            <a
+              id="change-location"
+              class="btn primary-color rounded-lg p-4 text-[20px]"
+              >Blog</a
+            >
           </div>
           <div class="">
             <!-- image section  -->
             <div class="flex items-center gap-4">
               <img class="w-9" src="assets/logo.png" alt="" />
-              <h1 class="text-xl font-semibold">Donate Bangladesh</h1>
+              <h1 class="text-lg md:text-2xl font-semibold hidden md:block">
+                Donate Bangladesh
+              </h1>
             </div>
           </div>
           <div class="">
@@ -95,7 +101,10 @@
         </div>
       </div>
 
-      <div id="donation-desc" class="max-w-screen-lg mx-auto space-y-10 mt-10">
+      <div
+        id="donation-desc"
+        class="max-w-screen-lg mx-auto space-y-10 mt-10 px-3 md:px-0"
+      >
         <!-- card 1  -->
         <div class="hero">
           <div
@@ -235,10 +244,14 @@
       </div>
 
       <!-- history section  -->
-      <div id="history-desc" class="max-w-screen-lg mx-auto space-y-4"></div>
+      <div
+        id="history-desc"
+        class="max-w-screen-lg mx-auto space-y-4 px-3 md:px-0"
+      ></div>
     </main>
     <!-- footer section  -->
     <footer class="nav-color p-16 mt-10"></footer>
+    <script src="script/toggle1.js"></script>
     <script src="script/function.js"></script>
     <script src="script/index.js"></script>
     <script src="script/donation.js"></script>
