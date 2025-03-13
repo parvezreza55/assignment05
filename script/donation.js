@@ -21,6 +21,7 @@ document
       const newMainBalance = mainBalance - donateAmount;
       setInnerText("nav-balance", newMainBalance);
       setInnerText("donate-balance", newdonatedBanalce);
+      document.getElementById("modal_btn").showModal();
       const historyContainer = document.getElementById("history-desc");
       const div = document.createElement("div");
       div.innerHTML = `
@@ -57,6 +58,7 @@ document
       const newMainBalance = mainBalance - donateAmount;
       setInnerText("nav-balance", newMainBalance);
       setInnerText("donate-balance1", newdonatedBanalce);
+      document.getElementById("modal_btn").showModal();
       const historyContainer = document.getElementById("history-desc");
       const div = document.createElement("div");
       div.innerHTML = `
@@ -93,6 +95,7 @@ document
       const newMainBalance = mainBalance - donateAmount;
       setInnerText("nav-balance", newMainBalance);
       setInnerText("donate-balance2", newdonatedBanalce);
+      document.getElementById("modal_btn").showModal();
       const historyContainer = document.getElementById("history-desc");
       const div = document.createElement("div");
       div.innerHTML = `

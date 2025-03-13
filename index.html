@@ -34,9 +34,9 @@
       }
     </style>
   </head>
-  <body>
+  <body id="body-color" class="relative">
     <header class="sticky top-0 backdrop-blur-lg">
-      <nav>
+      <nav class="">
         <div
           class="flex justify-between px-3 md:px-24 pb-5 pt-8 items-center nav-color"
         >
@@ -87,20 +87,43 @@
     </header>
     <!-- main section  -->
     <main class="mt-14">
-      <div
-        class="border-color border w-fit p-4 rounded-xl absolute z-10 center-div bg-red-400 transform translate-x-[-50%] translate-y-[-50%] top-[50%] left-[50%] text-center hidden"
+      <!-- modals  -->
+      <dialog id="modal_btn" class="modal">
+        <div class="modal-box text-center">
+          <h1>Congrates</h1>
+          <div class="flex justify-center">
+            <img src="assets/coin.png" alt="" />
+          </div>
+          <h1>You Dave Donated for Humankind</h1>
+          <p>Successfully</p>
+          <div class="modal-middle">
+            <form method="dialog">
+              <!-- if there is a button in form, it will close the modal -->
+              <button class="btn">Close confirmation</button>
+            </form>
+          </div>
+        </div>
+      </dialog>
+      <!-- <div
+        class="transform translate-x-[-50%] translate-y-[-50%] top-[50%] left-[50%] fixed"
       >
-        <h1>Congrates</h1>
-        <div class="flex justify-center">
-          <img src="assets/coin.png" alt="" />
+        <div
+          id="modals"
+          class="border-color border w-fit p-4 rounded-xl z-10 center-div bg-red-400 text-center "
+        >
+          <h1>Congrates</h1>
+          <div class="flex justify-center">
+            <img src="assets/coin.png" alt="" />
+          </div>
+          <h1>You Dave Donated for Humankind</h1>
+          <p>Successfully</p>
+          <div class="text-center">
+            <button id="close-modal" class="btn btn-ghost">
+              close confirmation
+            </button>
+          </div>
         </div>
-        <h1>You Dave Donated for Humankind</h1>
-        <p>Successfully</p>
-        <div class="text-center">
-          <button class="btn btn-ghost">close confirmation</button>
-        </div>
-      </div>
-
+      </div> -->
       <div
         id="donation-desc"
         class="max-w-screen-lg mx-auto space-y-10 mt-10 px-3 md:px-0"
